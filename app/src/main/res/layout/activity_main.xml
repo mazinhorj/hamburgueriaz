@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Barra de Ferramentas (Toolbar) Personalizada; ajustada para otimizar a utilização no Moto G 56 -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:background="@color/purple_500"
+        android:elevation="4dp"
+        android:paddingTop="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="2dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <!-- Banner Principal (imagem gerada por inteligência artificial Google Gemini) -->
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/banner_hamburguer"
+                android:background="#F5F5F5"
+                android:contentDescription="@string/desc_logo"
+                />
+
+            <TextView
+                style="@style/EstiloTexto"
+                android:text="@string/titulo_pedido"
+                android:textColor="@color/purple_700" />
+
+            <EditText
+                android:id="@+id/edit_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:hint="@string/hint_nome"
+                android:textColor="#000000"
+                android:textColorHint="#757575"
+                android:inputType="textPersonName"
+                android:importantForAutofill="no"
+                android:minHeight="48dp" />
+
+            <TextView
+                style="@style/EstiloTexto"
+                android:text="@string/label_adicionais" />
+
+            <CheckBox
+                android:id="@+id/cb_bacon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/opcao_bacon"
+                android:textColor="#000000"
+                android:onClick="onCheckboxClicked" />
+
+            <CheckBox
+                android:id="@+id/cb_queijo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/opcao_queijo"
+                android:textColor="#000000"
+                android:onClick="onCheckboxClicked" />
+
+            <CheckBox
+                android:id="@+id/cb_onion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/opcao_onion"
+                android:textColor="#000000"
+                android:onClick="onCheckboxClicked" />
+
+            <TextView
+                style="@style/EstiloTexto"
+                android:text="@string/label_quantidade" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginStart="8dp">
+
+                <Button
+                    android:id="@+id/btn_subtrair"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_menos"
+                    android:onClick="subtrair" />
+
+                <TextView
+                    android:id="@+id/tv_quantidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/num_zero"
+                    android:padding="20dp"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btn_somar"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_mais"
+                    android:onClick="somar" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/EstiloTexto"
+                android:text="@string/resumo_pedido" />
+
+            <TextView
+                android:id="@+id/tv_resumo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/valor_inicial"
+                android:textSize="28sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp" />
+
+            <Button
+                android:id="@+id/btn_fazer_pedido"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/botao_enviar"
+                android:textColor="#FFFFFF"
+                android:onClick="enviarPedido" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/copyright"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textColor="#757575"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

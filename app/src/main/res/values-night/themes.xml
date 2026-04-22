@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="EstiloTexto">
+        <!-- Propriedades de dimensão -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <!-- Alinhamento vertical -->
+        <item name="android:gravity">center_vertical</item>
+
+        <!-- Formatação de texto: Todas as letras maiúsculas -->
+        <item name="android:textAllCaps">true</item>
+
+        <!-- Tamanho da fonte em SP (padrão Android para acessibilidade) -->
+        <item name="android:textSize">15sp</item>
+
+        <!-- Espaçamento interno superior e inferior em DP -->
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+
+        <!-- Cor personalizada para os títulos -->
+        <item name="android:textColor">#444444</item>
+    </style>
+</resources>

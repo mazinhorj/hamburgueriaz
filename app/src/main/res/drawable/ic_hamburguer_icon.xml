@@ -1,0 +1,42 @@
+<!--Imagem gerada com inteligência artificial Google Gemini-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="110dp"
+    android:height="110dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Círculo de Fundo Vermelho -->
+    <path
+        android:fillColor="#D32F2F"
+        android:pathData="M50,50m-48,0a48,48 0,1 1,96 0a48,48 0,1 1,-96 0" />
+
+    <!-- Pão Superior -->
+    <path
+        android:fillColor="#D2691E"
+        android:pathData="M25,45 Q50,20 75,45 Z" />
+
+    <!-- Alface -->
+    <path
+        android:fillColor="#32CD32"
+        android:pathData="M22,45 L78,45 Q78,48 75,48 L25,48 Q22,48 22,45 Z" />
+
+    <!-- Queijo -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M25,48 L75,48 L72,52 L28,52 Z" />
+
+    <!-- Carne -->
+    <path
+        android:fillColor="#5D2E0D"
+        android:pathData="M24,50 L76,50 Q78,58 76,60 L24,60 Q22,58 24,50 Z" />
+
+    <!-- Pão Inferior -->
+    <path
+        android:fillColor="#D2691E"
+        android:pathData="M25,62 L75,62 Q75,70 50,70 Q25,70 25,62 Z" />
+
+    <!-- LETRA Z SOBREPOSTA (Corrigida e Centralizada) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38,38 H62 V44 L46,58 H62 V64 H38 V58 L54,44 H38 V38 Z" />
+</vector>
