@@ -35,7 +35,7 @@
         android:fillColor="#D2691E"
         android:pathData="M25,62 L75,62 Q75,70 50,70 Q25,70 25,62 Z" />
 
-    <!-- LETRA Z SOBREPOSTA (Corrigida e Centralizada) -->
+    <!-- LETRA Z SOBREPOSTA -->
     <path
         android:fillColor="#FFFFFF"
         android:pathData="M38,38 H62 V44 L46,58 H62 V64 H38 V58 L54,44 H38 V38 Z" />
